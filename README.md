@@ -1,19 +1,27 @@
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/NAWormySegment.svg)](https://img.shields.io/cocoapods/v/NAWormySegment.svg)
-[![Platform](https://img.shields.io/cocoapods/p/NAWormySegment.svg?style=flat)](http://cocoadocs.org/docsets/NAWormySegment)
-# NAWormySegment 
+# NAWormySegment
 
-NAWormySegment is custom created UIControl that acts like UISegment with Wormy move animation.
+A segmented control for UIKit with an animated selection indicator.
 
-![Demo](http://s11.picofile.com/file/8393680834/ezgif_com_video_to_gif.gif)
+![NAWormySegment demo](demo.gif)
 
-## Installation
+## Why it exists
 
-To use the library, just add the dependency to your Podfile: 
+The standard segmented control has no animated indicator.
+## Try it
 
-```swift
+Add the pod (published on CocoaPods, version 0.1.0, April 2020):
+
+```ruby
 pod 'NAWormySegment'
 ```
 
-## Usage
+In a storyboard or xib, add a `UIView` and set its custom class to `NAWormySegment`.
+Needs iOS 13.2 or later and Swift 5.
 
-Create UIView (Storyboard | Xib) and set Custom Class to "NAWormySegment"
+## Options
+
+Set in Interface Builder or in code: `items` (the segment titles), `textColor`, `BGColor` and `selectedColor`.
+
+## Status
+
+Small and stable since 2020. Not actively developed.
